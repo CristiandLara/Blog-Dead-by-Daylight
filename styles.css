@@ -1,9 +1,99 @@
-body{background-image: url(DBDaniversario.jpg
-);
-background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+body {
+    background-color: #000000;  /* Todo el fondo de la página es negro por defecto */
+    color: #ffffff;             /* Letras blancas */
     margin: 0;
-    height: 100vh;
+    padding: 0;
+    padding-bottom: 400px;
+    
+}
+
+/* Esta caja va a controlar tu imagen de portada */
+.portada-banner {
+    width: 100%;
+    height: 400px; /* 👈 ¡AQUÍ CONTROLAS EL ALTO! Ponle 250px, 300px, 350px... lo que tú quieras */
+    background-image: url(DBDaniversario.jpg);
+    background-position: top center; /* Centra la imagen para que se corte bonito */
+    background-size: 100% 100%;      /* Hace que rellene la caja perfectamente */
+    background-repeat: no-repeat;
+    border-bottom: 2px solid #ff8800;
+  
+}
+
+/* Espacio para el texto de tu blog abajo */
+.Titulo-dead{
+    padding: 30px;
+    min-height: 1000px; /* Para que puedas hacer scroll hacia abajo en el negro */
+    text-align: center;    
+}
+.bloque-historia {
+    display: flex;
+    align-items: flex-start; /* Alinea el texto arriba con la imagen */
+    gap: 20px;               /* El espacio de separación entre la imagen y el texto */
+    margin-top: 20px;
+}
+
+/* Controla el tamaño de la imagen de la izquierda */
+.imagen-izquierda {
+    width: 350px;            /* Ajusta este ancho a tu gusto */
+    height: auto;            /* Evita que la foto se deforme */
+    border-radius: 8px;   
+   border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);   /* (Opcional) Bordes un poquito redondeados para que se vea premium */
+}
+
+/* Controla el texto que va a la derecha */
+.texto-derecha {
+    flex: 1;                 /* Hace que el texto ocupe todo el espacio restante de la fila */
+    font-size: 18px;         /* Tamaño de letra cómodo para leer */
+    line-height: 1.6;  
+    ;      /* Espacio entre líneas para que no se vea amontonado */
+}
+
+
+h1 {
+    text-align: center;
+    color: #ff8800; /* Ese naranja neón brutal */
+    text-shadow: 0px 0px 10px rgba(255, 136, 0, 0.5); /* Un brillo místico de fondo */
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+h2 {
+    color: #ff8800; /* Mismo naranja para los subtítulos como "Historia" */
+    font-size: 28px;
+    margin-top: 40px;
+    border-bottom: 2px solid rgba(255, 136, 0, 0.3); /* Una línea sutil naranja abajo del subtítulo */
+    padding-bottom: 5px;
+}
+.seccion-ente {
+    margin-top: 60px;
+    margin-bottom: 300px;
+}
+
+/* Contenedor que obliga a la imagen a estar perfectamente en el medio */
+.contenedor-imagen-ente {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+/* La imagen centrada con su efecto neón naranja */
+.imagen-ente-neon {
+    width: 250px;               /* Un tamaño más imponente al estar en el centro */
+    max-width: 100%;            /* Se adapta si la pantalla es más pequeña */
+    height: auto;
+    border-radius: 12px;        /* Bordes redondeados elegantes */
+    
+    /* El neón naranja para que combine con el resto del diseño */
+    border: 1px solid rgba(255, 136, 0, 0.5);
+    box-shadow: 0px 0px 25px rgba(255, 136, 0, 0.7);
+}
+
+/* Estilo para el texto que va abajo */
+.texto-ente p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    text-align: justify;        /* Opcional: hace que el bloque de texto se vea más ordenado */
 }
