@@ -66,8 +66,14 @@ h2 {
     padding-bottom: 5px;
 }
 .seccion-ente {
-    margin-top: 60px;
+    margin-top: -600px;   /* Reduce el espacio negro de arriba. Si necesitas subirla más, ponle -80px o -100px */
+    padding-top: 0px;
     margin-bottom: 300px;
+    text-align: center;
+    padding-left: 20px;   /* Espacio de seguridad en el borde izquierdo */
+        padding-right: 20px;  /* Espacio de seguridad en el borde derecho */
+        text-align: center;   /* Asegura que todo el texto del Ente se mantenga centrado */
+        box-sizing: border-box;
 }
 
 /* Contenedor que obliga a la imagen a estar perfectamente en el medio */
@@ -312,4 +318,72 @@ h2 {
 .video-neon-azul {
     border: 1px solid #0088ff;
     box-shadow: 0px 0px 15px rgba(0, 136, 255, 0.4);
+}
+.pie-pagina {
+    text-align: center;
+    padding: 40px 0 20px 0; /* Espaciado interno para que no quede pegado al texto de arriba */
+    background-color: transparent; /* Mantiene tu fondo negro de la hoja */
+}
+
+.pie-pagina p {
+    color: #888; /* Un color gris sutil para el texto general */
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+.pie-pagina .link-github {
+    color: #ff003c; /* Color rojo neón (puedes cambiarlo por el azul #00d2ff si prefieres) */
+    text-decoration: none; /* Quita la línea subrayada aburrida */
+    font-weight: bold;
+    transition: all 0.3s ease; /* Transición suave para el efecto de luz */
+}
+
+/* Efecto cuando pasas el mouse por encima de tu nombre */
+.pie-pagina .link-github:hover {
+    color: #fff; /* Cambia a blanco */
+    text-shadow: 0 0 10px #ff003c, 0 0 20px #ff003c; /* Brillo neón */
+}
+@media (max-width: 1000px) {
+    
+    /* Hace que la imagen y el texto se pongan uno abajo del otro */
+    .bloque-history, .bloque-historia { 
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra todo el contenido */
+        text-align: center;  /* Centra las letras del párrafo */
+    }
+
+    /* Le da un tamaño cómodo a la imagen en el teléfono y la separa del texto */
+    .imagen-izquierda {
+        max-width: 90%;      /* Ocupa casi todo el ancho de la pantalla móvil */
+        height: auto;
+        margin-bottom: 20px; /* Separa la imagen del texto que viene abajo */
+        float: none;         /* Rompe cualquier alineación vieja que la empuje a un lado */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Centra el contenedor del texto y evita que choque con lo que sigue */
+    .texto-derecha {
+        width: 100%;
+        padding: 0 15px;     /* Margen interno a los lados para que las letras no toquen el borde del teléfono */
+        margin-bottom: 40px; /* ESPACIO CLAVE: Separa este texto de la sección del Ente para que no choquen */
+    }
+    
+    /* Ajuste extra por si el título de Historia quedó raro */
+    .Titulo-dead h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .seccion-ente {
+        margin-top: 40px !important; /* Cambiamos el -50px de PC a un número positivo para BAJARLO */
+        padding-top: 20px;
+        clear: both; /* Evita que cualquier elemento de arriba se le encime */
+    }
+    
+    .Titulo-dead h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }   
 }
