@@ -3,14 +3,14 @@ body {
     color: #ffffff;             /* Letras blancas */
     margin: 0;
     padding: 0;
-    padding-bottom: 400px;
+    padding-bottom: 0%;
     
 }
 
 /* Esta caja va a controlar tu imagen de portada */
 .portada-banner {
     width: 100%;
-    height: 400px; /* 👈 ¡AQUÍ CONTROLAS EL ALTO! Ponle 250px, 300px, 350px... lo que tú quieras */
+    height: 500px; /* 👈 ¡AQUÍ CONTROLAS EL ALTO! Ponle 250px, 300px, 350px... lo que tú quieras */
     background-image: url(DBDaniversario.jpg);
     background-position: top center; /* Centra la imagen para que se corte bonito */
     background-size: 100% 100%;      /* Hace que rellene la caja perfectamente */
@@ -386,4 +386,14 @@ h2 {
         text-align: center;
         margin-bottom: 20px;
     }   
+   .portada-banner {
+    width: 100%;
+    height: 56vw; /* 👈 ¡AQUÍ CONTROLAS EL ALTO! Ponle 250px, 300px, 350px... lo que tú quieras */
+    background-image: url(DBDaniversario.jpg);
+    background-position: top center; /* Centra la imagen para que se corte bonito */
+    background-size: contain;      /* Hace que rellene la caja perfectamente */
+    background-repeat: no-repeat;
+    border-bottom: 2px solid #ff8800;
+  
+}
 }
