@@ -105,13 +105,14 @@ h2 {
 }
 /* Contenedor general de la sección */
 .seccion-bandos {
-    margin-top: 60px;
+    margin-top:-200px;
     text-align: center;
 }
 
 .titulo-bandos {
     color: #ff8800; /* Mantenemos el naranja neón para el título de la sección */
     margin-bottom: 40px;
+
 }
 
 /* Caja que pone las dos tarjetas una al lado de la otra en el centro */
@@ -339,9 +340,17 @@ h2 {
 }
 
 /* Efecto cuando pasas el mouse por encima de tu nombre */
-.pie-pagina .link-github:hover {
+.pie-pagina .link-github:hovergit {
     color: #fff; /* Cambia a blanco */
     text-shadow: 0 0 10px #ff003c, 0 0 20px #ff003c; /* Brillo neón */
+}
+a{ 
+    color:  #ff8800;
+    
+
+
+
+
 }
 @media (max-width: 1000px) {
     
